@@ -100,7 +100,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python3,多进程," />
 
 
 
@@ -111,17 +111,18 @@
 
 
 
-<meta name="description" content="title: python3多进程 date: 2018-08-22 author: Zhangrong.Huang categories: Python3 tags: Python3 由于这两天自己负责的数据处理模块，都涉及到IO密集的数据读写，为了能够加快处理速度和调试速度，就想着使用Python的多进程，顺便借此机会，系统地学习一下Python的多进程。 多进程主要由以下几种方式：  for">
+<meta name="description" content="由于这两天自己负责的数据处理模块，都涉及到IO密集的数据读写，为了能够加快处理速度和调试速度，就想着使用Python的多进程，顺便借此机会，系统地学习一下Python的多进程。 多进程主要由以下几种方式：  fork（仅支持Unix/Linux系统） multiprocessing（跨平台多进程） Pool Process    依次来看下这几种方式创建和实现多进程。 1. forkfork其实是">
+<meta name="keywords" content="Python3,多进程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="集思广益">
+<meta property="og:title" content="python3多进程">
 <meta property="og:url" content="http://yoursite.com/2018/08/22/hzr/python3多进程/index.html">
 <meta property="og:site_name" content="集思广益">
-<meta property="og:description" content="title: python3多进程 date: 2018-08-22 author: Zhangrong.Huang categories: Python3 tags: Python3 由于这两天自己负责的数据处理模块，都涉及到IO密集的数据读写，为了能够加快处理速度和调试速度，就想着使用Python的多进程，顺便借此机会，系统地学习一下Python的多进程。 多进程主要由以下几种方式：  for">
+<meta property="og:description" content="由于这两天自己负责的数据处理模块，都涉及到IO密集的数据读写，为了能够加快处理速度和调试速度，就想着使用Python的多进程，顺便借此机会，系统地学习一下Python的多进程。 多进程主要由以下几种方式：  fork（仅支持Unix/Linux系统） multiprocessing（跨平台多进程） Pool Process    依次来看下这几种方式创建和实现多进程。 1. forkfork其实是">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-22T05:42:10.898Z">
+<meta property="og:updated_time" content="2018-08-22T05:49:06.036Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="集思广益">
-<meta name="twitter:description" content="title: python3多进程 date: 2018-08-22 author: Zhangrong.Huang categories: Python3 tags: Python3 由于这两天自己负责的数据处理模块，都涉及到IO密集的数据读写，为了能够加快处理速度和调试速度，就想着使用Python的多进程，顺便借此机会，系统地学习一下Python的多进程。 多进程主要由以下几种方式：  for">
+<meta name="twitter:title" content="python3多进程">
+<meta name="twitter:description" content="由于这两天自己负责的数据处理模块，都涉及到IO密集的数据读写，为了能够加快处理速度和调试速度，就想着使用Python的多进程，顺便借此机会，系统地学习一下Python的多进程。 多进程主要由以下几种方式：  fork（仅支持Unix/Linux系统） multiprocessing（跨平台多进程） Pool Process    依次来看下这几种方式创建和实现多进程。 1. forkfork其实是">
 
 
 
@@ -157,7 +158,7 @@
 
 
 
-  <title> | 集思广益</title>
+  <title>python3多进程 | 集思广益</title>
   
 
 
@@ -335,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">python3多进程</h1>
         
 
         <div class="post-meta">
@@ -347,7 +348,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-22T13:42:10+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-22T00:00:00+08:00">
                 2018-08-22
               </time>
             
@@ -357,6 +358,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python3/" itemprop="url" rel="index">
+                    <span itemprop="name">Python3</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -385,12 +408,7 @@
       
 
       
-        <p>title: python3多进程</p>
-<p>date: 2018-08-22</p>
-<p>author: Zhangrong.Huang</p>
-<p>categories: Python3</p>
-<p>tags: Python3</p>
-<p>由于这两天自己负责的数据处理模块，都涉及到IO密集的数据读写，为了能够加快处理速度和调试速度，就想着使用Python的多进程，顺便借此机会，系统地学习一下Python的多进程。</p>
+        <p>由于这两天自己负责的数据处理模块，都涉及到IO密集的数据读写，为了能够加快处理速度和调试速度，就想着使用Python的多进程，顺便借此机会，系统地学习一下Python的多进程。</p>
 <p>多进程主要由以下几种方式：</p>
 <ol>
 <li><code>fork</code>（<strong>仅支持Unix/Linux系统</strong>）</li>
@@ -458,6 +476,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Python3-多进程/" rel="tag"># Python3,多进程</a>
+          
+        </div>
+      
 
       
       
@@ -476,6 +500,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/22/hzr/解决Apache的因为GLIBC_PRIVATE not defined in file libc.so.6，而Graceful restart failed/" rel="prev" title="解决Apache的因为GLIBC_PRIVATE not defined in file libc.so.6，而Graceful restart failed">
+                解决Apache的因为GLIBC_PRIVATE not defined in file libc.so.6，而Graceful restart failed <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -552,7 +580,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -563,7 +591,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -574,7 +602,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
