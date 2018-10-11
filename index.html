@@ -1081,7 +1081,7 @@
       
         
           
-            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>   在部署山东实体机时，发现web应用无法读取到Hbase中的数据，导致DDOS模块中流量还原不能正常显示以及域名历史记录添加新的域名后不能正常显示。编写了一个小的java程序在部署web服务器上，来读取Hbase集群中的数据，发现程序不能正常读取数据，但是也不会马上报错。</p>
+            <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>   在部署实体机时，发现web应用无法读取到Hbase中的数据，导致DDOS模块中流量还原不能正常显示以及域名历史记录添加新的域名后不能正常显示。编写了一个小的java程序在部署web服务器上，来读取Hbase集群中的数据，发现程序不能正常读取数据，但是也不会马上报错。</p>
 <h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>   查询各种博客无果，但是通过分析等待几十分钟后的异常结果显示发现，程序在查询数据时，用到了Hbase中的主机名字，然而web服务器上没有对应的匹配。所以我将Hbase集群上的 /etc/hosts  文件中的各个机器IP以及对应的主机名（hostname）复制粘贴到了web服务器的/etc/hosts文件中，问题解决。</p>
 <h2 id="报错截图"><a href="#报错截图" class="headerlink" title="报错截图"></a>报错截图</h2><p><img src="/images/yandingkui_img/20170731-1.jpg" alt="程序报错截图"></p>
 
